@@ -84,7 +84,7 @@ public class Main extends Application{
         
 
         ColumnConstraints column2 = new ColumnConstraints(); //Para filas solo hay que poner Row
-
+      //segunda columna anchura del 20%
         column2.setPercentWidth(20);
 
       //Añade las restricciones a las dos primeras columnas //Para filas solo hay que poner Row
