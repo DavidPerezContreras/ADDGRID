@@ -61,27 +61,38 @@ public class Main extends Application{
         
         //Alinea el GridPane en el centro del contenedor raiz
         gp1.setAlignment(Pos.CENTER);
+        
+        //TOP_LEFT
+        //TOP_CENTER
+        //BOTTOM_RIGHT
+        
 		
 		
         
         
         
         ColumnConstraints column1 = new ColumnConstraints(); //Para filas solo hay que poner Row
-
-        column1.setPercentWidth(20);
-
-
+        
+        
+        
+        //Anchura del 10% del contenedor
+        column1.setPercentWidth(10);
+        
+        //Anchura mínima  y máxima
+        column1.setMinWidth(90);
+        column1.setMaxWidth(300);
+        
 
         ColumnConstraints column2 = new ColumnConstraints(); //Para filas solo hay que poner Row
 
-        column2.setPercentWidth(35);
+        column2.setPercentWidth(20);
 
       //Añade las restricciones a las dos primeras columnas //Para filas solo hay que poner Row
         gp1.getColumnConstraints().addAll(column1, column2);
         
         
         //Cambia la etiqueta a la última columna  //Para filas solo hay que poner Row
-        gp1.setColumnIndex(label, 5);
+        GridPane.setColumnIndex(label, 5);
         
         
         
