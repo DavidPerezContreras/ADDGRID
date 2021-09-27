@@ -1,11 +1,14 @@
 import javafx.application.Application;
+import javafx.geometry.HPos;
 import javafx.geometry.Pos;
+import javafx.geometry.VPos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
 public class Main extends Application{
@@ -92,9 +95,12 @@ public class Main extends Application{
         
         
         //Cambia la etiqueta a la última columna  //Para filas solo hay que poner Row
-        GridPane.setColumnIndex(label, 5);
+        //GridPane.setColumnIndex(label, 5);
         
         
+        //Alinea la etiqueta arriba derecha
+        GridPane.setHalignment(label, HPos.RIGHT);
+        GridPane.setValignment(label, VPos.TOP);
         
         
 		
