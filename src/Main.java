@@ -3,6 +3,7 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
@@ -62,6 +63,29 @@ public class Main extends Application{
         gp1.setAlignment(Pos.CENTER);
 		
 		
+        
+        
+        
+        ColumnConstraints column1 = new ColumnConstraints();
+
+        column1.setPercentWidth(20);
+
+
+
+        ColumnConstraints column2 = new ColumnConstraints();
+
+        column2.setPercentWidth(35);
+
+      //Añade las restricciones a las dos primeras columnas
+
+        gp1.getColumnConstraints().addAll(column1, column2);
+        
+        
+        
+        
+        
+        
+        
 		
         root.getChildren().add(gp1);
 		gp1.setGridLinesVisible(true);
