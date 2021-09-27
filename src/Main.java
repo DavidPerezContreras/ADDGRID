@@ -54,7 +54,7 @@ public class Main extends Application{
         gp1.add(btn4, 3, 3);
         gp1.add(btn5, 4, 4);
         
-        //RowSpan que junta 3 celdas (1+2)
+        //RowSpan que junta 3 celdas (1+2) //Para columnas solo hay que poner Column en vez de Row
         GridPane.setRowSpan(label, 3);
         
 
@@ -66,22 +66,22 @@ public class Main extends Application{
         
         
         
-        ColumnConstraints column1 = new ColumnConstraints();
+        ColumnConstraints column1 = new ColumnConstraints(); //Para filas solo hay que poner Row
 
         column1.setPercentWidth(20);
 
 
 
-        ColumnConstraints column2 = new ColumnConstraints();
+        ColumnConstraints column2 = new ColumnConstraints(); //Para filas solo hay que poner Row
 
         column2.setPercentWidth(35);
 
-      //Añade las restricciones a las dos primeras columnas
-
+      //Añade las restricciones a las dos primeras columnas //Para filas solo hay que poner Row
         gp1.getColumnConstraints().addAll(column1, column2);
         
         
-        
+        //Cambia la etiqueta a la última columna  //Para filas solo hay que poner Row
+        gp1.setColumnIndex(label, 5);
         
         
         
